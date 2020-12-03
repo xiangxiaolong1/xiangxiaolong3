@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // let arr = [1, 2, 3]
+    // console.log(...arr);
+    // console.log(arr);
+    // let o = {
+    //   a: 1,
+    //   b: 2
+    // }
+    // console.log(String(arr));
+    // console.log(String(o));
+    // console.log(arr.toString());
+    // console.log(String(1));
+    //  console.log( JSON.parse(JSON.stringify(o)) ); 
+    //  console.log(JSON.stringify(arr));
+    // let str = 'afajejawpfjpeefp'
+    // for (let i of str) {
+    //   console.log(i);
+    // }
+    // let str = 'afsafasjafajfa'
+
+    // let set = new Set(str)
+    // console.log(typeof (set));
+    // console.log(set);
+    // console.log(JSON.stringify(str));
+    // console.log(JSON.parse(JSON.stringify(str)));
+    // console.log(Array.from(str));
+    // console.log(str.split(','));
+    // let fn = function () {}
+    // console.log(typeof (fn));
+    // let arr=[]
+    // let str = 'afajfjljafaflfjdssfs'
+    // console.log([...new Set(str)].join(''));
+    // let arr = [1, 1, 1, 2, 2, 3, 3, 5, 5, 4, 47, 8, 8, 9, 8, 9]
+    // // console.log([...new Set(arr)]);
+    // let newArr = arr.reduce(function (prev, item, index, a) {
+    //   if (!prev.includes(item)) {
+    //     prev.push(item)
+
+    //   }
+    //   // console.log(this);
+    //   return prev
+    // }, [])
+    // console.log(newArr);
+    // let arr = [{
+    //   name: '1'
+    // }, {
+    //   name: '2'
+    // }, {
+    //   name: '3'
+    // }, {
+    //   name: '1'
+    // }, {
+    //   name: '2'
+    // }]
+    // let obj = {}
+    // let newArr = []
+    // for (let i = 0; i < arr.length; i++) {
+    //   if (!obj[arr[i].name]) {
+    //     newArr.push(arr[i])
+    //     obj[arr[i].name]=1
+    //   }
+    // }
+    // console.log(obj);
+    // console.log(newArr);
+    // var arr = [{
+    //   "name": "ZYTX",
+    //   "age": "Y13xG_4wQnOWK1QwJLgg11d0pS4hewePU95UHtpMl3eE81uS74NC-6zu-Rtnw4Ix",
+    //   "gender": "AAAAAA.doc"
+    // }, {
+    //   "name": "ZYTA",
+    //   "age": "Y13xG_4wQnOWK1QwJLgg11d0pS4hewePU95UHtpMl3eE81uS74NC-6zu-Rtnw4Ix",
+    //   "gender": "BBBBBB.doc"
+    // }, {
+    //   "name": "ZDTX",
+    //   "age": "Y13xG_4wQnOWK1QwJLgg11d0pS4hewePU95UHtpMl3eE81uS74NC-6zu-Rtnw4Ix",
+    //   "gender": "CCCCCC.doc"
+    // }, {
+    //   "name": "ZYTX",
+    //   "age": "Y13xG_4wQnOWK1QwJLgg11d0pS4hewePU95UHtpMl3eE81uS74NC-6zu-Rtnw4Ix",
+    //   "gender": "AAAAAA.doc"
+    // }];
+    // var hash = {};
+    // arr = arr.reduce(function (item, next) {
+    //   hash[next.name] ? '' : hash[next.name] = true && item.push(next);
+    //   return item
+    // }, [])
+    // console.log(arr);
+    var arrays = [
+
+      {
+        "id": 1,
+        "name": "李四1"
+      },
+
+      {
+        "id": 2,
+        "name": "李四1"
+      },
+
+      {
+        "id": 2,
+        "name": "李四"
+      },
+
+      {
+        "id": 1,
+        "name": "李四1"
+      },
+
+      {
+        "id": 5,
+        "name": "李四5"
+      },
+
+    ];
+    var result = [];
+
+    var obj = [];
+
+    var str;
+
+    for (var i = 0; i < arrays.length; i++) {
+
+      str = JSON.stringify(arrays[i]);
+
+      if (obj.indexOf(str) == -1) {
+
+        result.push(arrays[i]);
+
+        obj.push(str);
+
+      }
+
+    }
+    console.log(result,obj);
+  </script>
+</body>
+
+</html>
